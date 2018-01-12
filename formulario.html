@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <form method="POST" action="form.php">      <!-- O method é a forma como ele vai enviar e o action é o arquivo do servidor onde ele vai salvar essas
+                                                         informações -->
+            <br>    
+            <div form-group>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>      <!-- form-control é uma classe do bootstrap -->
+            </div>
+            <br><br>
+        
+            <div form-group>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required>      <!-- form-control é uma classe do bootstrap -->
+            </div>
+
+            <br><br>
+            <div class="form-group">
+                <label for="nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="form-control" required min="2016-01-01" max "2018-01-20">
+            </div>
+
+            <br>
+            <div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+
+        </form>
+        
+
+
+
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
